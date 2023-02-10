@@ -8,31 +8,15 @@ This task is to use the Monte Carlo (MC) scheme to price binary options under th
 
 ### Theory Overviews
 
-*Boyle (1977) employed Monte Carlo method to estimate option price for the first*
+Boyle (1977) employed Monte Carlo method to estimate option price for the first time. He calculated a plain call option price in using MC.
 
-*time. He calculated a plain call option price in using MC.*
+1.1 Monte Carlo Method
 
+To obtain the risk-neutral prices of financial derivatives, Monte Carlo simulation is a practical algorithm. The math theorem behind this approach is the central limit theorem. This indicates that the price computed by MC simulation is the risk-neutral price. Furthermore, the standard error of the estimated asset price is in proportion to one divided by the square of simulation number. Thus, to increase the accuracy of this estimation by we increase the number of simulation scenarios. We can also use central theorem to compute confidence bounds for the errors.
 
-*### 1.1 Monte Carlo Method*
+1.2 Euler-Maruyama Method
 
-*To obtain the risk-neutral prices of financial derivatives, Monte Carlo simulation is a*
-
-*practical algorithm. The math theorem behind this approach is the central limit*
-
-*theorem. This indicates that the price computed by MC simulation is the risk-neutral*
-
-*price. Furthermore, the standard error of the estimated asset price is in proportion to*
-
-*one divided by the square of simulation number. Thus, to increase the accuracy of this*
-
-*estimation by we increase the number of simulation scenarios. We can also use central*
-
-*theorem to compute confidence bounds for the errors.*
-
-
-*### 1.2 Euler-Maruyama Method*
-
-*Euler-Maruyama approximation converge with strong order 0.5 under Libschitz and bounded growth conditions on the coefficient f anf g. And the this approximation if an Ito process converges with week order 1.0. Thus, week order of convergence is better than strong order of convergence in Euler. I will use this methods to initialized MC simulation.*
+Euler-Maruyama approximation converge with strong order 0.5 under Libschitz and bounded growth conditions on the coefficient f anf g. And the this approximation if an Ito process converges with week order 1.0. Thus, week order of convergence is better than strong order of convergence in Euler. I will use this methods to initialized MC simulation.
 
 ## 2. Findings and Conclusion:
 
